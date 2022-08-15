@@ -1,0 +1,233 @@
+html,
+body {
+    background-color: #F5F5F5;
+    width: 100%;
+    /* height: 100%; */
+    min-height: 100%;
+    overflow-x: hidden;
+    /* overflow-y: auto; */
+    /* 滚动顺滑 */
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+    /* 滚动更流畅 */
+    // -webkit-user-select: none;
+    /* 禁止文字选中 */
+    -webkit-touch-callout: none;
+    /* 系统默认菜单被禁用 */
+    -webkit-tap-highlight-color: transparent;
+    /* 去掉点击闪动 */
+    -ms-touch-action: manipulation;
+    /* ie10去掉点击触发延迟 */
+    touch-action: manipulation;
+    /* ie11去掉点击触发延迟 */
+    word-break: break-all;
+    /* 使英文和数字自动换行 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* font-family: PingFangSC-Regular, sans-serif;  */
+    font-family: PingFangSC-Regular, sans-serif;
+}
+
+textarea,
+input {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-modify: read-write-plaintext-only;
+    outline: none !important;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    /* 上下小箭头按钮 */
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none
+}
+
+/*公共类*/
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+
+/* 底部有bottom-nav */
+
+.app-box {
+    padding-bottom: 10px;
+}
+
+.flexBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexBoxV2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* 兼容faskclick */
+
+label>* {
+    pointer-events: none;
+}
+
+/* btn中文字上下居中 不要使用行高 */
+/*
+e.g
+<span class="middle-txt">{{item.value}}</span>
+*/
+.middle-txt{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-txtV2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 超出隐藏，禁止换行 */
+.overhideTxt{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+}
+/* 多行超出隐藏 */
+.muchlinehide{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow:ellipsis; 
+}
+/* .muchlinehide{
+    position: relative;
+    overflow: hidden; 
+    word-break: break-all;
+}
+.muchlinehide:after{
+    content: '...';
+    padding-left: 5px;
+    position: absolute;
+    bottom: 1px;
+    right: 0;
+    font-weight:bold;
+    background: -webkit-linear-gradient(left, transparent, #fff 15%);
+} */
+
+.swiperbox{
+    overflow: hidden;
+    z-index: 5;
+}
+
+
+/*通用按钮样式**/
+.submitbtn{
+    width: 85.3%;
+    height: 50px;
+    line-height: 50px;
+    margin: 20px auto 0 auto;
+    background: #4887FF;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+}
